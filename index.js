@@ -51,4 +51,4 @@ console.log(`Branch A: ${branchA.getBranchInfo()}`);
 console.log(`Branch B: ${branchB.getBranchInfo()}`);
 console.log(branchA === branchB ? 'Conclusion: Instances are the same': "Conclusion: Instances aren't the same" )
 
-Object.freeze(BankBranch) //freeze ensures that no changes can be made to the singleton instance after it is created.
+Object.freeze(BankBranch.bankBranchInstance) //freeze ensures that no changes can be made to the singleton instance after it is created.
